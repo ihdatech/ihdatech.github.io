@@ -1,0 +1,47 @@
+.profile-image {
+    border-radius: 50%;
+    border-style: dashed;
+}
+
+.work-place {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.place {
+    flex: 1;
+    margin-right: 25%;
+    min-width: 200px;
+}
+
+.location {
+    flex: 0;
+    min-width: 150px;
+    margin-left: auto;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+/* Penyesuaian untuk layar kecil */
+@media (max-width: 992px) {
+    .work-place {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .place {
+        margin-right: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .location {
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        width: 100%;
+        white-space: normal;
+        clear: both;
+    }
+}
